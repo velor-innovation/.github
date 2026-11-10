@@ -1,0 +1,27 @@
+name: Mejora
+description: Ajuste o actualización a una función que ya existe
+title: "[Mejora] "
+type: Mejora
+projects: ["velor-innovation/5"]
+body:
+  - type: textarea
+    id: actual
+    attributes:
+      label: ¿Cómo funciona hoy?
+    validations:
+      required: true
+  - type: textarea
+    id: cambio
+    attributes:
+      label: ¿Qué se quiere cambiar y por qué?
+    validations:
+      required: true
+  - type: textarea
+    id: aceptacion
+    attributes:
+      label: Criterios de aceptación
+      description: ¿Cómo sabremos que está terminado?
+      value: |
+        - [ ] 
+    validations:
+      required: true

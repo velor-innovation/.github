@@ -1,0 +1,26 @@
+name: Nueva función
+description: Funcionalidad que hoy no existe en el sistema
+title: "[Nueva función] "
+type: Nueva función
+projects: ["velor-innovation/5"]
+body:
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: ¿Qué se necesita y para qué?
+      description: Describe la funcionalidad y el problema que resuelve.
+    validations:
+      required: true
+  - type: textarea
+    id: usuarios
+    attributes:
+      label: ¿Quién la va a usar?
+  - type: textarea
+    id: aceptacion
+    attributes:
+      label: Criterios de aceptación
+      description: ¿Cómo sabremos que está terminada?
+      value: |
+        - [ ] 
+    validations:
+      required: true

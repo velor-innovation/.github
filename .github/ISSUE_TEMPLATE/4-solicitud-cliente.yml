@@ -1,0 +1,43 @@
+name: Solicitud de cliente
+description: Petición que llegó de un cliente por correo, WhatsApp, llamada o demo
+title: "[Cliente] "
+projects: ["velor-innovation/5"]
+body:
+  - type: markdown
+    attributes:
+      value: "El semi senior asigna el tipo al revisarla: **PIN** si aplica solo a este cliente; Mejora, Nueva función o Corrección bug si aplica a todos. Llena también el campo **Cliente**."
+  - type: input
+    id: cliente
+    attributes:
+      label: Cliente
+    validations:
+      required: true
+  - type: dropdown
+    id: alcance
+    attributes:
+      label: ¿A quién aplica el cambio?
+      options:
+        - Solo a este cliente (PIN)
+        - A todos los clientes del producto
+        - No sé, que lo defina el semi senior
+    validations:
+      required: true
+  - type: textarea
+    id: solicitud
+    attributes:
+      label: ¿Qué pidió el cliente?
+    validations:
+      required: true
+  - type: textarea
+    id: aceptacion
+    attributes:
+      label: Criterios de aceptación
+      description: ¿Cómo sabremos que está terminado?
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: input
+    id: fecha
+    attributes:
+      label: Fecha comprometida con el cliente (si existe)
