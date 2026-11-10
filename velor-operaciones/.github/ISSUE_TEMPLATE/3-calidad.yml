@@ -1,0 +1,21 @@
+name: Calidad
+description: Actividad del proceso de calidad de un software
+title: "[Calidad] "
+type: Calidad
+projects: ["velor-innovation/5"]
+body:
+  - type: textarea
+    id: actividad
+    attributes:
+      label: Actividad
+      description: Normativa, revisión o procedimiento a cumplir.
+    validations:
+      required: true
+  - type: textarea
+    id: aceptacion
+    attributes:
+      label: Criterios de cumplimiento
+      value: |
+        - [ ] 
+    validations:
+      required: true

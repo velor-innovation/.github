@@ -1,0 +1,22 @@
+name: Documentación
+description: Manual o guía de uso nueva o actualizada
+title: "[Documentación] "
+type: Documentación
+projects: ["velor-innovation/5"]
+body:
+  - type: input
+    id: issue
+    attributes:
+      label: Issue de desarrollo relacionado (si aplica)
+      placeholder: velor-innovation/siat#123
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: ¿Qué manual o sección se crea o actualiza?
+    validations:
+      required: true
+  - type: input
+    id: drive
+    attributes:
+      label: Link al documento en Google Drive
+      description: Se llena al terminar.
