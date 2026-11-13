@@ -4,23 +4,88 @@ title: "[Nueva función] "
 type: Nueva función
 projects: ["velor-innovation/5"]
 body:
-  - type: textarea
-    id: objetivo
+  - type: markdown
     attributes:
-      label: ¿Qué se necesita y para qué?
-      description: Describe la funcionalidad y el problema que resuelve.
-    validations:
-      required: true
+      value: "✍️ Llena el machote reemplazando lo que está entre corchetes [ ]. Borra las filas o secciones que no apliquen."
   - type: textarea
-    id: usuarios
+    id: detalle
     attributes:
-      label: ¿Quién la va a usar?
-  - type: textarea
-    id: aceptacion
-    attributes:
-      label: Criterios de aceptación
-      description: ¿Cómo sabremos que está terminada?
+      label: Detalle de la nueva función
       value: |
-        - [ ] 
+        ## 🚀 Nueva función: [Nombre de la funcionalidad]
+
+        > [!NOTE]
+        > 🙋 **Solicitado por:** [Nombre / Área / Cliente] · 🗓️ **Fecha de solicitud:** [dd/mm/aaaa]
+
+        ---
+
+        ### 🧩 Dónde vivirá
+
+        | 🔹 Campo | 📝 Detalle |
+        |---|---|
+        | 💻 **Software** | [SIAT / NOLTRA / NOVUS / UNIAMA / ADU] |
+        | 📂 **Módulo** | [Ej. Recepciones, Inventario, Facturación] |
+        | 🖥️ **Ubicación en el menú** | [Ej. Servicios › Transmisiones] |
+        | 👥 **Quién la usará** | [Perfil de usuario] |
+
+        ---
+
+        ### 🎯 Propósito
+
+        > [!TIP]
+        > **Como** [tipo de usuario] **quiero** [acción] **para** [beneficio].
+
+        **¿Qué problema resuelve?**
+        [Describe la necesidad actual y cómo se resuelve hoy sin esta función.]
+
+        **🪜 Flujo propuesto:**
+        1. [El usuario entra a …]
+        2. [Captura …]
+        3. [El sistema …]
+
+        | ✅ Incluye | 🚫 No incluye (por ahora) |
+        |---|---|
+        | [Lo que sí entra en esta entrega] | [Lo que queda para después] |
+
+        ---
+
+        ### ✅ Criterios de aceptación
+
+        - [ ] 🔐 Respeta los permisos por perfil de usuario
+        - [ ] 👀 Revisado y aprobado por: @[usuario]
+        - [ ] 🚀 Liberado a productivo (PR a main con `Closes #`)
+
+        > [!IMPORTANT]
+        > Si la dificultad es **Alta**, dividir en sub-issues antes de asignar.
+
+        ---
+
+        ### 🎬 Material de promoción
+
+        - [ ] 🎥 Requiere videotutorial
+        - [ ] 📘 Requiere sección nueva en el manual
+        - [ ] 📱 Requiere publicación en redes
+
+        ---
+
+        ### 📣 Notas o avisos
+
+        <details>
+        <summary>🛠️ Consideraciones técnicas (clic para ver)</summary>
+
+        - 🗄️ Cambios en base de datos: [Sí / No · detalle]
+        - 🔗 Integraciones: [Ej. API STP, otro sistema]
+        - 🔐 Permisos nuevos: [detalle]
+        - ⚠️ Riesgos: [detalle]
+
+        </details>
+
+        <details>
+        <summary>📎 Material de apoyo (clic para ver)</summary>
+
+        - 🖼️ Bocetos o maquetas: [arrastra imágenes aquí]
+        - 📄 Documento de la solicitud: [link]
+
+        </details>
     validations:
       required: true
