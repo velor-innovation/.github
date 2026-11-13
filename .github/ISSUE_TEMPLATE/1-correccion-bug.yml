@@ -4,35 +4,104 @@ title: "[Bug] "
 type: Corrección bug
 projects: ["velor-innovation/5"]
 body:
-  - type: textarea
-    id: problema
+  - type: markdown
     attributes:
-      label: ¿Qué está fallando?
-      description: Describe el error y en qué pantalla o módulo ocurre.
+      value: "✍️ Llena el machote reemplazando lo que está entre corchetes [ ]. Borra las filas o secciones que no apliquen."
+  - type: dropdown
+    id: ambiente
+    attributes:
+      label: 🌍 Ambiente
+      options:
+        - Productivo
+        - Pruebas
+        - Ambos
+    validations:
+      required: true
+  - type: dropdown
+    id: frecuencia
+    attributes:
+      label: 🔁 Frecuencia
+      options:
+        - Siempre
+        - A veces
+        - Una sola vez
+    validations:
+      required: true
+  - type: dropdown
+    id: usuarios
+    attributes:
+      label: 👥 Usuarios afectados
+      options:
+        - Un usuario
+        - Un cliente
+        - Todos los clientes
     validations:
       required: true
   - type: textarea
-    id: pasos
+    id: detalle
     attributes:
-      label: Pasos para reproducirlo
-      placeholder: |
-        1. Entrar a ...
-        2. Dar clic en ...
-        3. Aparece ...
+      label: Detalle del error
+      value: |
+        ## 🐞 Corrección: [Descripción corta del error]
+
+        > [!NOTE]
+        > 🙋 **Reportado por:** [Nombre / Cliente] · 🗓️ **Detectado el:** [dd/mm/aaaa]
+        > 🚦 **Prioridad sugerida:** [Urgente / Alta / Media / Baja]
+
+        ---
+
+        ### 🧩 Dónde ocurre
+
+        | 🔹 Campo | 📝 Detalle |
+        |---|---|
+        | 💻 **Software** | [SIAT / NOLTRA / NOVUS / UNIAMA / ADU] |
+        | 📂 **Módulo** | [Ej. Recepciones, Inventario, Facturación] |
+        | 🖥️ **Pantalla o ruta** | [Ej. Recepciones › Nueva entrada] |
+        | 🔢 **Versión** | [Ej. v2.4 o liberación del dd/mm/aaaa] |
+        | 🌐 **Navegador / dispositivo** | [Ej. Chrome en Windows] |
+
+        ---
+
+        ### 🔍 Descripción del problema
+
+        > [!CAUTION]
+        > **Impacto:** [Qué no puede hacer el usuario por este error. Ej. No puede registrar entradas.]
+
+        [Describe el error con detalle.]
+
+        **🪜 Pasos para reproducirlo:**
+        1. [Entrar a …]
+        2. [Dar clic en …]
+        3. [Aparece …]
+
+        | ❌ Resultado actual | ✅ Resultado esperado |
+        |---|---|
+        | [Qué pasa hoy] | [Qué debería pasar] |
+
+        ---
+
+        ### ✅ Criterios de aceptación
+
+        - [ ] 🛠️ El error ya no ocurre siguiendo los pasos de arriba
+        - [ ] 🔄 Se revisó que la corrección no afecte otras funciones del módulo
+        - [ ] 🧪 Validado en el servidor de pruebas por la coordinadora de calidad
+        - [ ] 🚀 Liberado a productivo (PR a main con `Closes #`)
+        - [ ] 📣 Se avisó al cliente que lo reportó (si aplica)
+
+        ---
+
+        ### 📣 Notas o avisos
+
+        > [!WARNING]
+        > [Riesgos o restricciones. Ej. Hay datos afectados que se deben corregir manualmente.]
+
+        <details>
+        <summary>📎 Evidencia (clic para ver)</summary>
+
+        - 🖼️ Capturas: [arrastra imágenes aquí]
+        - 🧾 Mensaje de error o log: [pegar aquí]
+        - 🎥 Video del error: [link]
+
+        </details>
     validations:
       required: true
-  - type: textarea
-    id: esperado
-    attributes:
-      label: ¿Qué debería pasar?
-    validations:
-      required: true
-  - type: input
-    id: cliente
-    attributes:
-      label: Cliente que lo reportó (si aplica)
-  - type: textarea
-    id: evidencia
-    attributes:
-      label: Evidencia
-      description: Capturas, mensajes de error o registros. Puedes arrastrar imágenes aquí.
