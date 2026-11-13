@@ -48,7 +48,6 @@ body:
 
         - [ ] 👀 Revisado y aprobado por: @[usuario]
         - [ ] 🔄 Las funciones existentes del módulo siguen funcionando igual
-        - [ ] 🖥️ Se aplico cambios en pruebas y productivo
         - [ ] 🚀 Liberado a productivo (PR a main con `Closes #`)
 
         ---
