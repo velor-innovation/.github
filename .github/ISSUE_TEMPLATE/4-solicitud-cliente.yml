@@ -40,6 +40,17 @@ body:
 
         ---
 
+        **🪜 Flujo propuesto:**
+        1. [El usuario entra a …]
+        2. [Captura …]
+        3. [El sistema …]
+
+        | ✅ Incluye | 🚫 No incluye (por ahora) |
+        |---|---|
+        | [Lo que sí entra en esta entrega] | [Lo que queda para después] |
+
+        ---
+
         ### ✅ Criterios de aceptación
 
         - [ ] 👀 Revisado y aprobado por: @[usuario]
