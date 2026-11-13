@@ -5,39 +5,77 @@ projects: ["velor-innovation/5"]
 body:
   - type: markdown
     attributes:
-      value: "El semi senior asigna el tipo al revisarla: **PIN** si aplica solo a este cliente; Mejora, Nueva función o Corrección bug si aplica a todos. Llena también el campo **Cliente**."
-  - type: input
-    id: cliente
-    attributes:
-      label: Cliente
-    validations:
-      required: true
-  - type: dropdown
-    id: alcance
-    attributes:
-      label: ¿A quién aplica el cambio?
-      options:
-        - Solo a este cliente (PIN)
-        - A todos los clientes del producto
-        - No sé, que lo defina el semi senior
-    validations:
-      required: true
+      value: "✍️ Llena el machote reemplazando lo que está entre corchetes [ ]. Borra las filas o secciones que no apliquen."
   - type: textarea
-    id: solicitud
+    id: detalle
     attributes:
-      label: ¿Qué pidió el cliente?
-    validations:
-      required: true
-  - type: textarea
-    id: aceptacion
-    attributes:
-      label: Criterios de aceptación
-      description: ¿Cómo sabremos que está terminado?
+      label: Detalle de la solicitud
       value: |
-        - [ ] 
+        ## 🤝 Solicitud de cliente: [Cliente] · [Resumen corto]
+
+        > [!NOTE]
+        > 🏢 **Cliente:** [Nombre del cliente] · 👤 **Contacto:** [Nombre y puesto]
+        > 📞 **Canal:** [WhatsApp / Correo / Llamada / Demo / Capacitación] · 🗓️ **Fecha de solicitud:** [dd/mm/aaaa]
+        > 📅 **Fecha comprometida con el cliente:** [dd/mm/aaaa o "Sin compromiso"]
+
+        ---
+
+        ### 🧩 Datos de la solicitud
+
+        | 🔹 Campo | 📝 Detalle |
+        |---|---|
+        | 💻 **Software** | [SIAT / NOLTRA / NOVUS / UNIAMA / ADU] |
+        | 📂 **Módulo** | [Ej. Recepciones, Inventario, Facturación] |
+        | 🎯 **¿A quién aplica?** | [Solo a este cliente (PIN) / A todos los clientes / Por definir] |
+        | 🚦 **Urgencia para el cliente** | [Urgente / Alta / Media / Baja] |
+
+        ---
+
+        ### 💬 Qué pidió el cliente
+
+        > [Escribe la solicitud con las palabras del cliente, o pega el mensaje.]
+
+        **¿Por qué lo necesita?**
+        [Contexto del cliente: proceso afectado, problema que tiene, fecha de su operación…]
+
+        ---
+
+        ### ✅ Criterios de aceptación
+
+        - [ ] 👀 Revisado y aprobado por: @[usuario]
+        - [ ] 🚀 Liberado a productivo (PR a main con `Closes #`)
+        - [ ] 📣 Se confirmó con el cliente que quedó atendido
+
+        ---
+
+        ### 🎬 Material de promoción
+
+        - [ ] 🎥 Requiere videotutorial
+        - [ ] 📘 Requiere sección nueva en el manual
+        - [ ] 📱 Requiere publicación en redes
+
+        ---
+
+        ### 📣 Notas o avisos
+
+        > [!IMPORTANT]
+        > Si es **PIN**, llenar el campo **Cliente** del issue y no incluirlo en manuales o videos generales.
+
+        <details>
+        <summary>🧭 Para el semi senior (clic para ver)</summary>
+
+        - 🏷️ Tipo asignado: [PIN / Mejora / Nueva función / Corrección bug]
+        - 🧱 Dificultad estimada: [Bajo / Medio / Alto]
+        - 📅 Respuesta enviada al cliente: [dd/mm/aaaa · qué se le dijo]
+
+        </details>
+
+        <details>
+        <summary>📎 Material de apoyo (clic para ver)</summary>
+
+        - 🖼️ Capturas o archivos del cliente: [arrastra aquí]
+        - 📄 Correo o conversación: [link]
+
+        </details>
     validations:
       required: true
-  - type: input
-    id: fecha
-    attributes:
-      label: Fecha comprometida con el cliente (si existe)
