@@ -7,36 +7,6 @@ body:
   - type: markdown
     attributes:
       value: "✍️ Llena el machote reemplazando lo que está entre corchetes [ ]. Borra las filas o secciones que no apliquen."
-  - type: dropdown
-    id: ambiente
-    attributes:
-      label: 🌍 Ambiente
-      options:
-        - Productivo
-        - Pruebas
-        - Ambos
-    validations:
-      required: true
-  - type: dropdown
-    id: frecuencia
-    attributes:
-      label: 🔁 Frecuencia
-      options:
-        - Siempre
-        - A veces
-        - Una sola vez
-    validations:
-      required: true
-  - type: dropdown
-    id: usuarios
-    attributes:
-      label: 👥 Usuarios afectados
-      options:
-        - Un usuario
-        - Un cliente
-        - Todos los clientes
-    validations:
-      required: true
   - type: textarea
     id: detalle
     attributes:
@@ -46,7 +16,6 @@ body:
 
         > [!NOTE]
         > 🙋 **Reportado por:** [Nombre / Cliente] · 🗓️ **Detectado el:** [dd/mm/aaaa]
-        > 🚦 **Prioridad sugerida:** [Urgente / Alta / Media / Baja]
 
         ---
 
@@ -57,15 +26,17 @@ body:
         | 💻 **Software** | [SIAT / NOLTRA / NOVUS / UNIAMA / ADU] |
         | 📂 **Módulo** | [Ej. Recepciones, Inventario, Facturación] |
         | 🖥️ **Pantalla o ruta** | [Ej. Recepciones › Nueva entrada] |
-        | 🔢 **Versión** | [Ej. v2.4 o liberación del dd/mm/aaaa] |
-        | 🌐 **Navegador / dispositivo** | [Ej. Chrome en Windows] |
+        | 🌍 **Ambiente** | [Productivo / Pruebas / Ambos] |
+        | 🌐 **Navegador / dispositivo** | [Todos / Chrome / Mozilla] |
+        | 🔁 **Frecuencia** | [Siempre / A veces / Una sola vez] |
+        | 👥 **Usuarios afectados** | [Un usuario / Un cliente / Todos los clientes] |
 
         ---
 
         ### 🔍 Descripción del problema
 
         > [!CAUTION]
-        > **Impacto:** [Qué no puede hacer el usuario por este error. Ej. No puede registrar entradas.]
+        > **Impacto:** [Qué deja de hacer el usuario por este error. Ej. No puede registrar entradas.]
 
         [Describe el error con detalle.]
 
@@ -87,6 +58,7 @@ body:
         - [ ] 🧪 Validado en el servidor de pruebas por la coordinadora de calidad
         - [ ] 🚀 Liberado a productivo (PR a main con `Closes #`)
         - [ ] 📣 Se avisó al cliente que lo reportó (si aplica)
+        - [ ] 📙 Necesita manual?, en caso de que sí, se reportó a equipo de Promoción
 
         ---
 
