@@ -4,24 +4,74 @@ title: "[Mejora] "
 type: Mejora
 projects: ["velor-innovation/5"]
 body:
-  - type: textarea
-    id: actual
+  - type: markdown
     attributes:
-      label: ¿Cómo funciona hoy?
-    validations:
-      required: true
+      value: "✍️ Llena el machote reemplazando lo que está entre corchetes [ ]. Borra las filas o secciones que no apliquen."
   - type: textarea
-    id: cambio
+    id: detalle
     attributes:
-      label: ¿Qué se quiere cambiar y por qué?
-    validations:
-      required: true
-  - type: textarea
-    id: aceptacion
-    attributes:
-      label: Criterios de aceptación
-      description: ¿Cómo sabremos que está terminado?
+      label: Detalle de la mejora
       value: |
-        - [ ] 
+        ## ✨ Mejora: [Nombre corto de la mejora]
+
+        > [!NOTE]
+        > 🙋 **Solicitado por:** [Nombre / Área / Cliente] · 🗓️ **Fecha de solicitud:** [dd/mm/aaaa]
+
+        ---
+
+        ### 🧩 Dónde aplica
+
+        | 🔹 Campo | 📝 Detalle |
+        |---|---|
+        | 💻 **Software** | [SIAT / NOLTRA / NOVUS / UNIAMA / ADU] |
+        | 📂 **Módulo** | [Ej. Recepciones, Inventario, Facturación] |
+        | 🖥️ **Pantalla o ruta** | [Ej. Reportes › Inventario] |
+        | 👥 **Usuarios beneficiados** | [Todos / Un perfil / Usuarios internos] |
+
+        ---
+
+        ### 🎯 Propósito
+
+        > [!TIP]
+        > **Con esta mejora, el usuario podrá…** [beneficio en una sola frase]
+
+        | 📍 Hoy funciona así | 🔜 Después de la mejora |
+        |---|---|
+        | [Comportamiento actual] | [Comportamiento esperado] |
+
+        **¿Por qué lo necesitamos?**
+        [Ej. Ahorra tiempo, evita errores de captura, lo piden varios clientes…]
+
+        ---
+
+        ### ✅ Criterios de aceptación
+
+        - [ ] 👀 Revisado y aprobado por: @[usuario]
+        - [ ] 🔄 Las funciones existentes del módulo siguen funcionando igual
+        - [ ] 🖥️ Se aplico cambios en pruebas y productivo
+        - [ ] 🚀 Liberado a productivo (PR a main con `Closes #`)
+
+        ---
+
+        ### 🎬 Material de promoción
+
+        - [ ] 🎥 Requiere video nuevo o actualizado
+        - [ ] 📘 Requiere actualizar el manual
+        - [ ] 📱 Requiere publicación en redes
+
+        ---
+
+        ### 📣 Notas o avisos
+
+        > [!WARNING]
+        > [Riesgos o restricciones. Ej. Cambia el formato de un reporte que usan los clientes.]
+
+        <details>
+        <summary>📎 Material de apoyo (clic para ver)</summary>
+
+        - 🖼️ Capturas o bocetos: [arrastra imágenes aquí]
+        - 📄 Documento o correo de la solicitud: [link]
+
+        </details>
     validations:
       required: true
