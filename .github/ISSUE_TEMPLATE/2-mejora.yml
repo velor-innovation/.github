@@ -44,6 +44,15 @@ body:
 
         ---
 
+        ### ⚙ Flujo propuesto
+
+        **En la pantalla/sección:**
+        > 1. Paso 1
+        > 2. Paso 2
+        > 3. Paso 3
+        
+        ---
+
         ### ✅ Criterios de aceptación
 
         - [ ] 👀 Revisado y aprobado por: @[usuario]
