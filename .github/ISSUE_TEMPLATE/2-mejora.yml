@@ -55,17 +55,8 @@ body:
 
         ### ✅ Criterios de aceptación
 
-        - [ ] 👀 Revisado y aprobado por: @[usuario]
         - [ ] 🔄 Las funciones existentes del módulo siguen funcionando igual
         - [ ] 🚀 Liberado a productivo (PR a main con `Closes #`)
-
-        ---
-
-        ### 🎬 Material de promoción
-
-        - [ ] 🎥 Requiere video nuevo o actualizado
-        - [ ] 📘 Requiere actualizar el manual
-        - [ ] 📱 Requiere publicación en redes
 
         ---
 
