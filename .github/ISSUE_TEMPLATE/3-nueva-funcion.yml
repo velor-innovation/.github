@@ -52,24 +52,15 @@ body:
         ### ✅ Criterios de aceptación
 
         - [ ] 🔐 Respeta los permisos por perfil de usuario
-        - [ ] 👀 Revisado y aprobado por: @[usuario]
         - [ ] 🚀 Liberado a productivo (PR a main con `Closes #`)
-
-        > [!IMPORTANT]
-        > Si la dificultad es **Alta**, dividir en sub-issues antes de asignar.
-
-        ---
-
-        ### 🎬 Material de promoción
-
-        - [ ] 🎥 Requiere videotutorial
-        - [ ] 📘 Requiere sección nueva en el manual
-        - [ ] 📱 Requiere publicación en redes
 
         ---
 
         ### 📣 Notas o avisos
 
+        > [!IMPORTANT]
+        > Si la dificultad es **Alta**, dividir en sub-issues antes de asignar.
+        
         <details>
         <summary>🛠️ Consideraciones técnicas (clic para ver)</summary>
 
