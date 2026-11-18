@@ -53,17 +53,8 @@ body:
 
         ### ✅ Criterios de aceptación
 
-        - [ ] 👀 Revisado y aprobado por: @[usuario]
         - [ ] 🚀 Liberado a productivo (PR a main con `Closes #`)
         - [ ] 📣 Se confirmó con el cliente que quedó atendido
-
-        ---
-
-        ### 🎬 Material de promoción
-
-        - [ ] 🎥 Requiere videotutorial
-        - [ ] 📘 Requiere sección nueva en el manual
-        - [ ] 📱 Requiere publicación en redes
 
         ---
 
