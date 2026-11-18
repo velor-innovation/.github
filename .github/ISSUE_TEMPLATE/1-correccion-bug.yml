@@ -55,10 +55,8 @@ body:
 
         - [ ] 🛠️ El error ya no ocurre siguiendo los pasos de arriba
         - [ ] 🔄 Se revisó que la corrección no afecte otras funciones del módulo
-        - [ ] 🧪 Validado en el servidor de pruebas por la coordinadora de calidad
         - [ ] 🚀 Liberado a productivo (PR a main con `Closes #`)
         - [ ] 📣 Se avisó al cliente que lo reportó (si aplica)
-        - [ ] 📙 Necesita manual?, en caso de que sí, se reportó a equipo de Promoción
 
         ---
 
